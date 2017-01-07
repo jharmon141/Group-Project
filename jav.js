@@ -30,7 +30,7 @@ $.ajax({
 
         var geoCodeAddress = theftData[i].address.split(' ').join('+');
 
-        var resultsAddressURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + geoCodeAddress + "+Austin,+TX" + "&key=AIzaSyCkmjgypZRMNmKAuAw0B0ZGeRmjrDI9Mnc";
+        var resultsAddressURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + geoCodeAddress + "+Austin,+TX" + "&key=AIzaSyDBz5dnUKruyhiFoRiZj_bTS103I-JstJg";
         $.ajax({
             url: resultsAddressURL,
             type: "GET",
@@ -55,7 +55,7 @@ $.ajax({
 
         var geoCodeAddress = assaultData[i].address.split(' ').join('+');
 
-        var resultsAddressURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + geoCodeAddress + "+Austin,+TX" + "&key=AIzaSyCkmjgypZRMNmKAuAw0B0ZGeRmjrDI9Mnc";
+        var resultsAddressURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + geoCodeAddress + "+Austin,+TX" + "&key=AIzaSyDBz5dnUKruyhiFoRiZj_bTS103I-JstJg";
         $.ajax({
             url: resultsAddressURL,
             type: "GET",
@@ -80,7 +80,7 @@ $.ajax({
 
         var geoCodeAddress = dwiData[i].address.split(' ').join('+');
 
-        var resultsAddressURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + geoCodeAddress + "+Austin,+TX" + "&key=AIzaSyCkmjgypZRMNmKAuAw0B0ZGeRmjrDI9Mnc";
+        var resultsAddressURL = "https://maps.googleapis.com/maps/api/geocode/json?address=" + geoCodeAddress + "+Austin,+TX" + "&key=AIzaSyDBz5dnUKruyhiFoRiZj_bTS103I-JstJg";
         $.ajax({
             url: resultsAddressURL,
             type: "GET",
@@ -101,7 +101,7 @@ $.ajax({
             }
         });
     }
-})
+});
 
 
 
@@ -166,6 +166,7 @@ function Init() {
 
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
 
 // Initialize firebase
 
